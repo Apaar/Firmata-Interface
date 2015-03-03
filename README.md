@@ -8,3 +8,5 @@ Known issues
 -There is no way to exit the script in its current for :)
 -space causes a error as te strip command is failing
 -will integrate the initailisation of pru(has to be done manually right now)
+
+Code currently has no comments explaining what is going on..
