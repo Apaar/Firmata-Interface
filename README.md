@@ -1,11 +1,8 @@
 # Firmata-Interface
 Firmata Interface over pru speak
 pwm.set(pin no,value) for pwm
-dio.set(pin no,value) 
+dio.set(pin no,valuE)
 
-Known issues
--i am not sure of what command to use for dio in firmata
--space causes a error as te strip command is failing
--will integrate the initailisation of pru(has to be done manually right now)
+Can now handle random spaces and other junk :)
+Enter 'quit' to exit the programme.
 
-Code currently has no comments explaining what is going on..
