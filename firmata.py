@@ -14,15 +14,15 @@ while loop == 1 :
         out = ''
 
         match = re.match(r'(\D+)\((\d+),(\d+)(\D+)', input)
-
-        #print match.group(3)                     trailing spaces checking and quit are still being worked on
+        matchexit = re.match(r'\D+',input)
+        #print match.group(3)                     trailing spaces checking are still being worked on
         #print match.group(2)
         #match.group(1).strip()
         #match.group(4).strip()
         #print match.group(1)                     
         #print match.group(4)
-        #if match.group(1) == 'quit'
-        #        break;
+        if match.group(1) == 'quit'
+                break;
 
         if match.group(1)=='dio.set' :
                 out += 'SET DIO['
