@@ -3,7 +3,8 @@
 import re
 import socket
 
-TCP_IP = '127.0.0.1'
+#initializing the tcp socket
+TCP_IP = '127.0.0.1'                                    
 TCP_PORT = 6666
 BUFFER_SIZE = 1024
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -12,15 +13,10 @@ loop == 1
 while loop == 1 :
         input = raw_input('\n')
         out = ''
-
+        input = input.replace(' ','') #stripping all the spaces to prevent errors in match
         match = re.match(r'(\D+)\((\d+),(\d+)(\D+)', input)
         matchexit = re.match(r'\D+',input)
-        #print match.group(3)                     trailing spaces checking are still being worked on
-        #print match.group(2)
-        #match.group(1).strip()
-        #match.group(4).strip()
-        #print match.group(1)                     
-        #print match.group(4)
+       
         if match.group(1) == 'quit'
                 break;
 
